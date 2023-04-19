@@ -9,7 +9,7 @@ RATE_LIMIT = 5000
 def get_pull_requests(repo_url):
     owner, repo = repo_url.split('/')[-2:]
     parameters = {"state": "all", "per_page": 100}
-    headers = {'Authorization': 'Bearer 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'}
+    headers = {'Authorization': 'Bearer your_token'}
     response = requests.get(repo_url, headers=headers, params=parameters)
 
     if response.status_code != 200:
