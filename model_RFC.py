@@ -2,18 +2,18 @@
 Random Forest Classifier model for predicting whether a pull request will be merged or not.
 """
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_curve, auc, confusion_matrix
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 # Load the data
-df = pd.read_csv('commons-math-last.csv')
+df = pd.read_csv('data.csv')
 
 # Select the features
-X = df[['comments_length', 'review_comments_length', 'title_length', 'status', 'user_id']]
-y = df['pr_merged']
+X = df[['column1', 'column2', 'column3', '...', 'columnN']]
+y = df['yaxis_column']
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)

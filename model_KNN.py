@@ -16,14 +16,15 @@ from sklearn.metrics import roc_curve, roc_auc_score
 df = pd.read_csv('commons-math-last.csv')
 
 # Select the features
-X = df[['comments_length', 'review_comments_length', 'title_length', 'status', 'user_id']]
-y = df['pr_merged']
+X = df[['column1', 'column2', 'column3', '...', 'columnN']]
+y = df['Yaxis_column']
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Build the KNN classifier model
-knn = KNeighborsClassifier(n_neighbors=5)
+# K is the number of Neighbors that you want your model consider
+knn = KNeighborsClassifier(n_neighbors= K)
 knn.fit(X_train, y_train)
 
 # Make predictions on the testing set
