@@ -10,16 +10,22 @@ The tasks include selecting projects, querying pull requests via the Github API,
 To do this project it will be needed to use Python and various data analysis tools to collect and analyze data to answer the research questions.
 
 The procedure of project: 
-1) Extracting
-2) Labeling
-3) Calculating Kappa
-4) Statistical test on data
-5) Working On Models
+1) Getting pull requests
+2) Extracting dat required for our project
+3) Saving Dataframe to use in models 
+4) Labeling Data
+5) Calculating Kappa
+6) Statistical test on data
+7) Developing Models
 
 
-The algorithms that have been used for this project are: Random Forest Classifer and K Nearest Neighbors 
+The algorithms that have been used for this project are: 
+1) Random Forest Classifer
+2) K Nearest Neighbors 
 
-The statistical test is: Fleiss Kappa
+
+Inter-rater agreement with kappa measures: 
+1) Fleiss Kappa 
 
 Packages that are used in this project are:
 1) [Pandas](https://pandas.pydata.org/)
@@ -27,7 +33,7 @@ Packages that are used in this project are:
 3) [SciPy](https://scipy.org/)
 4) [Scikit-Learn](https://scikit-learn.org/stable/)
 5) [Seaborn](https://seaborn.pydata.org/)
-6) [github](https://pygithub.readthedocs.io/en/latest/introduction.html)
+6) [Github](https://pygithub.readthedocs.io/en/latest/introduction.html)
 is useful for extracting phase.
 
 
