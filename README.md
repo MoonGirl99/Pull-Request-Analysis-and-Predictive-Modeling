@@ -2,16 +2,16 @@
 
 This project involves researching two main questions related to pull requests on Github: 
 
-1) the reasons for changes in pull requests
-2) whether a pull request will be merged
+1) The reasons for changes in pull requests
+2) Whether a pull request will be merged
 
 The tasks include selecting projects, querying pull requests via the Github API, conducting qualitative analysis, building a predictive model, and presenting results. 
 
 To do this project it will be needed to use Python and various data analysis tools to collect and analyze data to answer the research questions.
 
-The procedure of project: 
+The procedure of the project: 
 1) Getting pull requests
-2) Extracting dat required for our project
+2) Extracting data required for our project
 3) Saving Dataframe to use in models 
 4) Labeling Data
 5) Calculating Kappa
